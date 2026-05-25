@@ -1,0 +1,35 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "this is namaste react by bikash",
+  "keywords": [],
+  "homepage": "https://github.com/Bikash543/NamasteReact#readme",
+  "bugs": {
+    "url": "https://github.com/Bikash543/NamasteReact/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bikash543/NamasteReact.git"
+  },
+  "license": "ISC",
+  "author": "bikash",
+  "type": "commonjs",
+  "scripts": {
+
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+
+  "browserlists":[
+    "last 2 version"
+  ]
+
+}

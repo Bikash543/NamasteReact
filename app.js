@@ -1,37 +1,74 @@
+import React from "react"
+
+import ReactDOM from "react-dom/client"
+
+
+// const heading = React.createElement("h1", { id: "heading" }, "Namaste React")
+// // console.log(heading)
 
 
 
+// //JSX is not HTML IN javascript
+
+// // react element
+
+// const Heading = <h1 id="heading" className="head">Namaste React Using JSX</h1>
+// // console.log(Heading)
+// const root = ReactDOM.createRoot(document.getElementById("root"))
+
+// // root.render(Heading)
+
+// // React Component
+
+// // class Based components - oldWay
+// // REact Functional Components - newWAy
 
 
-/*
 
-<div id="parent">
-<div id="child">
-<h1>I am H1 Tag </h1>
-<h2>I am H2 Tag</h2>
+// const Heading2 =()=>(
 
-</div>
-<div id="child2">
-<h1>I am H1 Tag </h1>
-<h2>I am H2 Tag</h2>
+// <div id="container">
+// <h1>hello i am bikash</h1>
 
-</div>
+// </div>
+
+// )
+
+// root.render(<Heading2/>
+// const elem =(
+//   <span>this is a span</span>
+// )
+
+// const element = (
+  
+//   <div>
+//     {elem}
+  
+//   <h1>i am an element</h1>
+//   </div>
+
+// )
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
-</div>
 
-*/
+const Title = ()=>(
+  
+  <h1>This is a title</h1>
 
-const parent =React.createElement("div", {id:"parent"},[React.createElement("div", {id:"child"},[React.createElement("h1", {},"i am a h1 tag"),React.createElement("h2", {},"i am a h2 tag")])],
-
-React.createElement("div", {id:"child2"},[React.createElement("h1", {},"i am a h1 tag"),React.createElement("h2", {},"i am a h2 tag")]))
-
-
-// root.render(parent)
+)
 
 
-  const heading=React.createElement("h1",{id:"heading"},"Bikash")
-  const root = ReactDOM.createRoot(document.getElementById("root"))
 
-  root.render(parent)
-  console.log(parent)
+const Heading = ()=>( 
+
+  
+  <div id="container">
+    {Title()}
+  <h1>Welcome Everyone</h1>
+  </div>
+  
+)
+
+root.render(<Heading/>)
